@@ -11,15 +11,30 @@
         <style>
             h1{
                 text-align: center;
-                background: yellow;
+                background: rgb(241, 241, 5);
             }
             table, th, td {
                 border: 1px solid black;
             }
+            #myBtn {
+                display: box;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+                }
         </style>
     </head>
     <body>
-        
+        <!--This is a comment. This will not be shown on the webpage.-->
         <div>
             <h1>Curriculum Vitae</h1> 
         </div>
@@ -86,5 +101,15 @@
                 I have a wide range of interests from <em><strong><u>computing and technology</u></strong></em> to <b>running, weight lifting,</b> <i>cooking, film and literature.</i> Although I have no real experience with computer programming and coding, I completed a short course in C Programming and an online course in Java Programming and developed skills on which I would like to build.
             </p>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Back to top">Back to Top</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
 </body>
 </html>
