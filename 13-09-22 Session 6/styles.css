@@ -1,0 +1,50 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    width: auto;
+}
+
+body {
+    background-color: red;
+}
+
+.div{color: green;}
+
+#section {
+    color: rgb(0, 28, 88);
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+/*.footer{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}*/
+
+.tryagain {
+    color: green;
+}
+
+.answer {
+    color: green;
+}
+
+a{
+    color: green;
+}
+
+#campfire {
+    max-width: 1000px;
+    width: 70%;
+    max-height: 1000px;
+    height: 70%;
+}
+
+#myBtn{
+position: sticky;
+bottom: 10px;
+}
