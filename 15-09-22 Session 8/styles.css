@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    
+}
+
+.banner {
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(banner.jpg);
+    background-size: cover;
+}
+
+#bannertext {
+    padding-top: 25vh;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 600%;
+}
+
+nav {
+    height: 25px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+    display: block;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    width: 19%;
+    text-align: center;
+}
+
+.subheading {
+    color: white;
+    text-align: center;
+    font-size: 400%;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    color: white;
+}
+
+.container1 {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.horntail {
+    float: left;
+    width: 40%;
+    padding-left: 15px;
+    max-width: 600px;
+    height: auto;
+}
+
+/*.horntail img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
+
+.paragraph1 {
+    float: right;
+    width: 40%;
+    padding-right: 15px;
+    font-size: 180%;
+}
+
+.container2{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.paragraph2 {
+    float: left;
+    width: 40%;
+    padding-left: 15px;
+    font-size: 180%;
+    /*font-size: 200%;
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;*/
+}
+
+.willow {
+    float: right;
+    width: 40%;
+    padding-right: 15px;
+    max-width: 800px;
+    height: auto;
+    /*display: inline-block;
+    width: 46%;*/
+}
+
+.container3 {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fight {
+    float: left;
+    width: 40%;
+    padding-left: 15px;
+    max-width: 600px;
+    height: auto;
+}
+
+.paragraph3 {
+    float: right;
+    width: 40%;
+    padding-right: 15px;
+    font-size: 180%;
+}
+
+h4, footer p {
+    text-align: center;
+}
+
+h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
