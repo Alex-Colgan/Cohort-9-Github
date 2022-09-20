@@ -1,0 +1,48 @@
+nav {
+    background-color: rgb(255, 60, 0);
+}
+
+.navlist {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+header {
+    background-color: yellow;
+    margin-top: -20px;
+    text-align: center;
+}
+
+body {
+    background-image: url(madagascar-682b99a278eb4f2dbc7cf3b8f4f18068.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col {
+    font-size: 1.5em;
+    color: white;
+}
+
+.row {
+    background-color: black;
+}
+
+#flag {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.5em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.container .about{
+    text-align: center;
+}
