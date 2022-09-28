@@ -72,22 +72,21 @@ function addItem() {
         //Console log for testing.
         console.log(list);
 
-        /**This is creating a new variable and 
+        /**This is creating a new variable called newLine and 
          * asigning it to the element with the id of li from the html page.
          */
         let newLine = document.getElementById("li");
 
-        /**This line seems to just be creating a new element called p and
-         * asigning the content of it to the new variable item. 
-         * But if I remove this the function doesn't work properly.
-         * Maybe it's creating a paragragh tag in HTML but I don't think so.
-         * I don't know why this works.
+        /**The following lines of code take the text from our new item and 
+         * place them into our list element and create a new line
+         * so that our text appears in a column.
          */
         let item = document.createElement("p");
 
         //Puts the text content of newItem into item.
         item.textContent = newItem;
 
+        //Puts our text from item into our newLine shopping list format.
         //Adds a new line to the end of our item so our list items don't all appear on the same line.
         newLine.append(item);
 
