@@ -1,0 +1,116 @@
+h1 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top:40px;
+    padding-bottom:10px;
+    text-align: center;
+    color: navy;
+}
+
+.toptext {
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+}
+
+.logo {
+    text-align: left;
+    cursor: pointer;
+}
+
+.cart {
+    text-align: right;
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+
+body {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.winter {
+    float: right;  
+
+}
+
+.row {
+    float: left;
+    width: 3%;
+    /*border: 1px solid black;*/
+    padding-top: 20%;
+}
+
+.columns {
+    columns: 1;
+    
+}
+
+.columns img {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.maincontent {
+    /*border: 1px solid black;*/
+    padding-left: 25vh;
+    padding-top: 30vh;
+
+}
+
+.btn {
+    background-image: linear-gradient(to bottom right, cyan, violet);
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 3px 8px 44px rgb(94, 58, 100);
+}
+
+.pretty {
+    font-weight: bold;
+    font-size: 75px;
+    color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.clothes {
+    /*border: 1px solid black;*/
+    font-size: 35px;
+    color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 700px;
+}
+
+.back-arrow {
+    height: 150px;
+    width: 150px;
+}
+
+.next-arrow {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+}
+
