@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">Demo</p>
+
+    <script>
+        /*
+        let a, b, c, d;
+        let firstName = "Alex";
+        let lastName = "Colgan";
+        let text = "";
+
+        a = 2;
+        b = 3;
+        console.log(a + b);
+
+        c = 5;
+        d = 5;
+        console.log((c + d) * 5);
+
+        console.log(firstName + lastName);
+
+        text += "word";
+        text += "book";
+        console.log(text);
+
+        if (c == d){
+            alert("It works.")
+        }
+
+        //This is a car object.
+        const car = {
+            make: 'Volvo',
+            model: 'X40',
+            cylinders: 6,
+        }
+        //These are methods for accessing info in the variable.
+        console.log(car);
+        console.log(car.make);
+        console.log(car["make"]);
+
+        document.getElementById('demo').innerHTML = car.make + ' ' + car.model;
+        */
+       let faveFruits = '';
+        function Person(first, last, fruits) {
+            this.firstName = first;
+            this.lastName =last;
+            this.favouriteFruits = faveFruits;
+        }
+        
+        const person1 = new Person ('Tom', 'Smith');
+        const person2 = new Person ('Laura', 'Jones');
+
+        let text = "";
+        text += person1.firstName + ' ' + person1.lastName + ', ';
+        text += person2.firstName + ' ' + person2.lastName;
+
+        document.getElementById('demo').innerHTML = text;
+
+        //An array is a special type of object that holds a collection of values.
+        const fruits = [
+            'value1', //index is 0
+            'value2', //index is 1
+            'value3'] //index is 2
+
+        console.log(fruits[0]);
+
+        fruits.push('pineapple');
+        console.log(fruits);
+
+        const person3 = new Person ('Roberto', 'Mancini', fruits);
+        console.log(person3);
+
+        function determineLetters(array) {
+            const result = array.map(function(item, i){
+                return item + ' has' + item.length + ' letters';
+            })
+        }
+        console.log(determineLetters(fruits));
+    </script>
+</body>
+</html>
