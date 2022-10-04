@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+
+    <script>
+        /*
+        function printName() {
+            //code for this function goes here
+            //print a name to a div on the page
+
+            const element = document.getElementsByClassName('demo1')[0];
+            
+            console.log(element);
+            
+            let firstName = 'John';
+
+            //element.innerHTML = firstName;
+            
+            const p1 = document.createElement('p');
+            const p2 = document.createElement('p');
+            p1.innerHTML = firstName;
+            p2.innerHTML = 'secondName';
+
+            element.appendChild(p1);
+            element.appendChild(p2);
+
+            
+
+        }
+        
+
+        //THIS IS A FUNCTION EXPRESSION
+        const printName = function() {
+                alert('PRINT Name - Function expression');
+            }
+
+        //before you CALL the function it won't do anything
+        printName();
+        */
+
+       
+        const myArrowFunction = (x) => {
+            //functions do not HAVE TO return anything. They can just do an action.
+            if (x == 1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        const element = document.getElementsByClassName('demo3')[0];
+        element.innerHTML = myArrowFunction();
+    </script>
+</body>
+</html>

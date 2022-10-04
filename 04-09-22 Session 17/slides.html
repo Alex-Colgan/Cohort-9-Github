@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkmode</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .mySlides {
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position: center;
+            height:100vh;
+            width:100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        .mySlides__inner {
+            z-index:10;
+        }
+
+        .background1 {
+            background-image: url("https://images.unsplash.com/photo-1456926631375-92c8ce872def?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+        }
+        
+        .background2 {
+            background-image: url("https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2372&q=80");
+        }
+
+        .background3 {
+            background-image: url("https://images.unsplash.com/photo-1664876000867-7906debad959?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+        }
+
+        .wrapper h1 {
+            margin:0;
+        }
+        .mySlides.darkMode {
+            filter: invert(100%);
+        }
+        .navigation {
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            width:100%;
+            position:absolute;
+            height: 100%;
+            left:0;
+            top:0;
+            z-index:0;
+        }
+        .navigation a {
+            font-size: 4rem;
+            color:#fff;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="mySlides background1">
+            <div class="mySlides__inner">
+                <h1>Group project</h1>
+                <button onclick="toggleMode()" id="button">Toggle Dark-Mode</button>
+            </div>
+        </div>
+        <div class="mySlides background2">
+            <div class="mySlides__inner">
+                <h1>Next Header</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit officiis sit voluptate molestias blanditiis quis. Tenetur, fugit molestias accusantium doloribus dignissimos excepturi. Quis mollitia nesciunt esse incidunt minima numquam qui?</p>
+            </div>
+        </div>
+        <div class="mySlides background3">
+            <div class="mySlides__inner">
+                <h1>Header 3</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit officiis sit voluptate molestias blanditiis quis. Tenetur, fugit molestias accusantium doloribus dignissimos excepturi. Quis mollitia nesciunt esse incidunt minima numquam qui?</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+       
+        
+    </div>
+														
+    <script>
+            
+    function toggleMode() {
+
+        //Functions for the toggle dark mode
+
+        const toggleButton= document.getElementById("button");
+        const mySlides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i <= mySlides.length; i++) {
+            if (mySlides[i].classList.contains("darkMode")){
+                mySlides[i].classList.remove("darkMode");
+            } else {
+                mySlides[i].classList.add("darkMode");
+            }
+        }
+        
+    }
+
+
+    // Functions for the slider
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+       
+        slides[slideIndex-1].style.display = "flex";  
+    }
+
+
+    
+    </script>
+</body>
+</html>
