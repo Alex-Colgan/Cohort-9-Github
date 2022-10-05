@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Baloo+Bhai+2&family=Biryani:wght@300&family=Fascinate&family=Open+Sans:wght@600&family=Outfit&family=Quicksand:wght@500&display=swap');
+
+/* Universal selector */
+*{
+margin:0;
+padding:0;
+background-color: #F5E0B7;
+font-family: 'Biryani', sans-serif;
+}
+
+.fcontainer{
+    border :8px solid black;
+    height:600px;
+    width:50%;
+    display:flex;
+    /* flex-direction: row; */
+   /* flex-direction: column; */
+   /* flex-direction: column-reverse; */
+   /* flex-direction: row-reverse; */
+   /* justify-content: left; */
+   /* justify-content: right; */
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fitem{
+    background-color: #EF476F;
+    border:2 px solid blac;
+    margin:10px;
+    width:100px;
+    height:100px;
+    text-align: center;
+    align-content: center;
+}
+.fitem img{
+    width:100px;
+    height:100px;
+}

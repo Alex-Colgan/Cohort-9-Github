@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+
+    <div class="demo"></div>
+    
+    <script>
+        
+        // function printName() {
+        //     // code for this function goes here
+        //     // print a name to a div on the page
+
+        //     const element = document.getElementsByClassName('demo')[0];
+
+        //     console.log(element);
+
+        //     let firstName = 'John';
+
+            
+        //     const p1 = document.createElement('p');
+        //     const p2 = document.createElement('p');
+        //     p1.innerHTML = firstName;
+        //     p2.innerHTML = 'second name';
+
+        //     element.appendChild(p1);
+        //     element.appendChild(p2);
+        // }
+
+
+        //THIS IS A FUNCTION EXPRESSION
+        const printName = function(){
+            alert('PRINT NAME - Function expression');
+        }
+        // printName();
+
+        const myArrowFunction = (x) => {
+            //functions do not HAVE TO return anything. they can just do an action.
+            if (x == 1){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        const element = document.getElementsByClassName('demo')[0];
+        element.innerHTML = myArrowFunction(1);
+
+        // function printName(){
+        //     alert('PRINT NAME - Function declaration');
+        // }
+
+        //before you CALL the function it won't do anything
+        
+
+
+    </script>
+</body>
+</html>
