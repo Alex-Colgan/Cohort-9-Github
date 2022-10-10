@@ -62,6 +62,16 @@ submitHandler.addEventListener('click', (e)=> {
 
         result.append(outerTwoCard);
 
+        /*
+        const myFunction = (x, y, z) => {
+            return x;
+        };
 
+
+        const myFunction = (x, y, z) => x ;
+        */
 });
+
+
+
 
