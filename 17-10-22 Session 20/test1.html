@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        text = "";
+        let i = 0;
+        const fruits = ['Apple', 'Orange', 'Pear'];
+        /*
+        for (i = 0; i < fruits.length; i++) {
+            if (fruits[i].includes("Orange")){
+                console.log(fruits[i])
+            }
+        }
+        */
+       while (i < fruits.length) {
+        text += "<br>The fruit is " + fruits[i];
+        i++;
+       }
+       document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>
