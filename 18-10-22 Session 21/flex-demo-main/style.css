@@ -1,0 +1,92 @@
+body {
+    margin:0;
+}
+
+/* FLEX */
+.feature-wrap {
+    display:flex; /* DEFINE THE FLEX CONTAINER IN CSS */
+    justify-content: center;
+    align-items: left;
+    flex-direction:row;
+    /* flex-direction:column; */
+    flex-wrap:wrap;
+    gap: 1rem;
+    /* width:100vw; */
+    height: 100vh;
+    background:yellow;
+    margin-top: 1rem;
+}
+.feature-wrap .feature {
+    width:200px;
+    height:140px;
+    background-color:crimson; 
+    background-image: url('https://images.unsplash.com/photo-1665991947189-272bf6e99f9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')
+}
+
+/* GRID */
+
+.grid-wrap {
+    display:grid;
+    grid-template-columns: [first] min-content [second] 1fr [third] 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:1rem;
+    /* width: 400px; */
+    height:100vh;
+    background-color: aquamarine;
+}
+
+.grid-item {
+    background-color:crimson; 
+    font-size: 4rem;
+    color:#fff;
+}
+
+.grid-item.main-feature {
+    background-color:#444;
+    /* grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2; */
+    grid-area: 1 / 2 / span 2 / span 2;
+}
+
+/* MEDIA QUERIES GO HERE */
+
+/* THIS IS MEDIA QUERY - BREAKPOINT IS 600px */
+@media (min-width:600px) {
+
+    .grid-wrap {
+        background-color: red;
+    }
+
+}
+
+
+/* THIS IS MEDIA QUERY - BREAKPOINT IS 760px */
+@media (min-width:760px) {
+
+    .grid-wrap {
+        background-color: yellow;
+        display: flex;
+        height:auto;
+    }
+
+    .grid-item {
+        flex-basis: 100px;
+    }
+
+    .grid-item img {
+        width:100%;
+    }
+
+}
+
+/*
+Note that when using min-width mediaqueries we put the media queries sSTARTING WITH THE LOWER BREAKPOIT (600) AND GOING UP
+If using max-width start with the higher breakpoint and go down
+*/
+
+
+
+
+
