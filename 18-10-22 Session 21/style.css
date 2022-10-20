@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+.gridWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    gap: 1rem;
+    background-color: green;
+}
+
+.gridItem {
+    background-color: crimson;
+}
+
+.gridItem.mainFeature {
+    background-color: rgb(246, 255, 0);
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
