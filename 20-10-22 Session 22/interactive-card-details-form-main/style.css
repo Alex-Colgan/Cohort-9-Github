@@ -1,0 +1,71 @@
+body {
+    background-image: url("/20-10-22 Session 22/interactive-card-details-form-main/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+}
+
+.mainSection {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.cardFront {
+    margin: 3%;
+    position: relative;
+}
+
+.cardLogo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.cardNumberEg {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cardNameEg {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    color: white;
+}
+
+.cardDateEg {
+    position: absolute;
+    left: 300px;
+    bottom: 30px;
+    color: white;
+}
+
+.cardBack {
+    margin: 3%;
+    position: relative;
+    left: 100px;
+}
+
+.cardCVCEg {
+    position: absolute;
+    bottom: 92px;
+    left: 350px;
+    color: white;
+}
+
+.formSection {
+    margin: 3%;
+}
+
+label, input {
+    font-size: 18px;
+}
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}

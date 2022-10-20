@@ -13,6 +13,8 @@
             display: flex;
             justify-content: center;
             flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 12px;
         }
 
         .feature1 {
@@ -20,7 +22,7 @@
             height: auto;
             max-width: 300px;
             max-height: 300px;
-            margin: 10px;
+            
         }
 
         .feature2 {
@@ -28,7 +30,7 @@
             height: auto;
             max-width: 300px;
             max-height: 300px;
-            margin: 10px;
+            
         }
 
         .feature3 {
@@ -36,7 +38,7 @@
             height: auto;
             max-width: 300px;
             max-height: 300px;
-            margin: 10px;
+            
         }
 
         .feature4 {
@@ -44,8 +46,19 @@
             height: auto;
             max-width: 300px;
             max-height: 300px;
-            margin: 10px;
+            margin-top: 12px;
+            
         }
+
+        @media only screen and (max-width: 600px) {
+            .flexRow {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: 12px;
+        }
+    }
 
         /*Experimenting with Grid*/
         /*
