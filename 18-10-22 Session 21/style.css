@@ -60,11 +60,21 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    
     .gridWrap {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
     }
+    
+    /**
+    .gridWrap {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    */
 
     .gridItem.mainFeature {
         background-color: rgb(246, 255, 0);
@@ -72,5 +82,17 @@ body {
         grid-column-end: 1;
         grid-row-start: auto;
         grid-row-end: auto;
-    }    
+    }
+
+    /**
+    .gridItem {
+        flex-basis: 100px;
+    }
+
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
+        width: 100%;
+        height: 100%;
+    }
+    */
+
   }
