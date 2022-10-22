@@ -12,10 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution { font-size: 11px; text-align: center; }
-        .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
 </head>
 <body>
 
@@ -28,14 +24,14 @@
         <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
       </div>
       <img src="/20-10-22 Session 22/interactive-card-details-form-main/images/bg-card-front.png" alt="Credit Card Front">
-      <h1 class="cardNumberEg">0000 0000 0000 0000</h1>
-      <h3 class="cardNameEg">Jane Appleseed</h3>
-      <h3 class="cardDateEg">00/00</h3>
+      <h1 class="cardNumberEg" id="cardNumberEg">0000 0000 0000 0000</h1>
+      <h3 class="cardNameEg" id="cardNameEg">Jane Appleseed</h3>
+      <h3 class="cardDateEg" id="cardDateEg">00/00</h3>
     </div>
 
     <div class="cardBack">
       <img src="/20-10-22 Session 22/interactive-card-details-form-main/images/bg-card-back.png" alt="Credit Card Back">
-      <h2 class="cardCVCEg">000</h2>
+      <h2 class="cardCVCEg" id="cardCVCEg">000</h2>
     </div>
 
   </div>
@@ -43,30 +39,35 @@
   <div class="formSection">
     <form action="#">
       <label for="cardNameInput">Cardholder Name</label><br>
-      <input type="text" name="cardNameInput" id="cardNameInput" value="e.g. Jane Appleseed"><br><br>
+      <input type="text" name="cardNameInput" id="cardNameInput" placeholder="e.g. Jane Appleseed" required><br><br>
+      
+
       <label for="cardNumberInput">Card Number</label><br>
-      <input type="text" name="cardNumberInput" id="cardNumberInput" value="e.g. 1234 5678 9123 0000"><br><br>
-      <label for="cardMMInput">Exp. Date (MM/YY)</label><br>
-      <input type="text" name="cardMMInput" id="cardMMInput" class="cardMMInput" value="MM">
-      <label for="cardYYInput"></label>
-      <input type="text" name="cardYYInput" id="cardYYInput" class="cardYYInput" value="YY"><br><br>
-      <label for="cardCVCInput">CVC</label><br>
-      <input type="text" name="cardCVCInput" id="cardCVCInput" value="e.g. 123"><br><br>
-      <input type="submit" value="Confirm"><br>
+      <input type="number" name="cardNumberInput" id="cardNumberInput" placeholder="e.g. 1234 5678 9123 0000" required><br><br>
+      
+      <label for="cardDateInput" id="dateLabel">Exp. Date (MM/YY)</label>
+      <label for="cardCVCInput" id="cvcLabel">CVC</label><br><br>
+      <input type="number" name="cardDateInput" id="cardMMInput" class="cardMMInput" placeholder="MM" required>
+      <input type="number" name="cardDateInput" id="cardYYInput" class="cardYYInput" placeholder="YY" required>
+      <input type="number" name="cardCVCInput" id="cardCVCInput" placeholder="e.g. 123" required><br><br>
+      
+      <button type="button" id="submit">Submit</button><br>
     </form>
   </div>
 
 </div>
   
 
-  <!-- Completed state start -->
+  <!-- 
+    Completed state start 
 
   <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
 
   Thank you!
   We've added your card details
   Continue
-  
+  -->
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Alex-Colgan">Alex Colgan</a>.

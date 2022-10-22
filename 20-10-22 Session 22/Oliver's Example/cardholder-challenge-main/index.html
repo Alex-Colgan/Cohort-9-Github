@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrap">
+
+    <div class="card-display">
+      <div class="card-display__cards">
+        <div class="card-display__card card-display__card--front">
+          <span>0000 0000 0000 0000</span>
+          <span id="card_cname">Jane Appleseed</span>
+          <span>00/00</span>
+        </div>
+        <div class="card-display__card card-display__card--back">
+          000
+        </div>
+      </div>
+      <div class="white-block"></div>
+
+    </div>
+    <div class="checkout">
+      <div class="checkout__form">
+        <form id="checkout-form">
+          <div class="form-row">
+            <label for="cname">Cardholder Name</label>
+            <input type="text" name="cname" id="cname" placehodler="e.g. Jane Appleseed">
+          </div>
+          <div class="form-row">
+            <label for="cname">Card Number</label>
+            <input type="text" name="cnumber" id="cnumber" placeholder="e.g. 1234 5678 9123 0000">
+          </div>
+          <div class="form-row details">
+            <div class="exp-wrap">
+              <label for="exp">Exp. Date (MM/YY)</label>
+              <div class="exp__inner">
+                <input type="text" name="exp" id="exp-m" placeholder="MM">
+                <input type="text" name="exp" id="exp-y" placeholder="YY">
+              </div>
+            </div>
+            <div class="cvc-wrap">
+              <label for="cvc">CVC</label>
+              <input type="text" name="cvc" id="cvc" placeholder="e.g. 123">
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="submit">Confirm</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Completed state start -->
+
+  Thank you!
+  We've added your card details
+  Continue
+
+
+  <script>
+    // Update the details on the card as the user fills in the fields
+
+    const form = document.getElementById('checkout-form');
+    const cardholderNameInput = document.getElementById('cname');
+
+
+    // console log the cardholder name when you type in the input
+    // When input changes update the card text on the card display using innerHTML
+    
+    cardholderNameInput.addEventListener('input', function (e){
+      e.preventDefault();
+      console.log(cardholderNameInput.value);
+      document.getElementById('card_cname').innerHTML = cardholderNameInput.value;
+    });
+
+  </script>
+</body>
+
+</html>

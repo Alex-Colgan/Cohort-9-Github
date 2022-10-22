@@ -1,18 +1,38 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey-violet-light: hsl(270, 3%, 87%);
+    --grey-violet-dark: hsl(279, 6%, 55%);
+    --dark-violet: hsl(278, 68%, 11%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 body {
     background-image: url("/20-10-22 Session 22/interactive-card-details-form-main/images/bg-main-desktop.png");
     background-repeat: no-repeat;
     background-repeat: repeat-y;
+    margin: 0;
+    font-size: 16px;
+}
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
 }
 
 .mainSection {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .cardFront {
     margin: 3%;
     position: relative;
+    margin-left: 30%;
+    margin-top: 20%;
 }
 
 .cardLogo {
@@ -48,6 +68,8 @@ body {
     margin: 3%;
     position: relative;
     left: 100px;
+    margin-left: 30%;
+    margin-top: 20%;
 }
 
 .cardCVCEg {
@@ -57,15 +79,125 @@ body {
     color: white;
 }
 
-.formSection {
-    margin: 3%;
-}
-
 label, input {
     font-size: 18px;
 }
 
-html {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
+.formSection {
+    margin: 3%;
+    background-color: var(--white);
+    padding:4rem 1rem;
+    width: 40%;
 }
+
+.formSection input {
+    color:var(--grey-violet-dark);
+    border: 1px solid var(--grey-violet-dark);
+    border-radius: 5px;
+    padding: 0.4rem 0.6rem;
+    width: 50%;
+    display:block;
+}
+
+#cardMMInput {
+    width: 20%;
+    display: inline-flex;
+}
+
+#cardYYInput {
+    width: 20%;
+    display: inline-flex;
+}
+
+#dateLabel {
+    display: inline-flex;
+    width: 50%;
+}
+
+#cardCVCInput {
+    width: 20%;
+    display: inline-flex;
+}
+
+#cvcLabel {
+    display: inline-flex;
+    width: 20%;
+    margin-left: 10%;
+}
+
+.formSection form label {
+    display:block;
+    color: var(--dark-violet);
+    text-transform: uppercase;
+}
+
+.formSection form button {
+    background-color: var(--dark-violet);
+    color:var(--white);
+    width: 100%;
+    padding:1rem;
+    border-radius: 10px;
+    border: none;
+    outline:0;
+}
+
+/**
+*:required {
+    background-color: rgb(211, 210, 204);
+  }
+  
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #c00000;
+  }
+  */
+
+  @media only screen and (max-width: 600px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 110vh;
+    }
+
+    .cardSection {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    body {
+        background-image: url("/20-10-22 Session 22/interactive-card-details-form-main/images/bg-main-mobile.png");
+        background-repeat: no-repeat;
+        background-repeat: repeat-x;
+        overflow: scroll;
+        height: 110vh;
+    }
+
+    .cardFront {
+        margin: 1%;
+        z-index: 1;
+        position: absolute;
+        top: 60%;
+        left: 8%;
+        margin-bottom: 2%;
+    }
+
+    .cardBack {
+        margin: 1%;
+        z-index: 0;
+        left: 100px;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .formSection {
+        position: relative;
+        top: 5vh;
+        padding-left: 20%;
+    }
+  }
