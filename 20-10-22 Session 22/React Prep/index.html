@@ -11,15 +11,46 @@
   </head>
   <body>
     <div id="root"></div>
+   
     <script type="text/babel">
     
-      function MyApp() {
-        return <h1>Hello, world!</h1>;
-      }
+      
 
+      
+      function MyDog() {
+        const styles = {
+          // CSS in JS.
+          backgroundColor: 'red', /* Uses camelCase for property. */
+          color: 'white'
+        }
+        // Linking an image in JS.
+        return  (<div>
+          <h2 style={styles}>Hello, I am a dog.</h2>
+          <img src={'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png'}/>
+          </div>); 
+      }
+      
+      function Component3() {
+        return  <h2>Hello, I am a component.</h2>; 
+      }
+      
+      function MyApp() {
+        /** Functional Component */
+        return (
+          <div>
+        <h1>Hello, world!</h1>
+        <MyDog/>
+        <Component3/>
+        </div>
+        );
+      }
+      
+      //const element = <h1>Hello, world</h1>;
+      //root.render(element);
+      
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
-      root.render(<MyApp />);
+      root.render(<MyApp/>);
 
     </script>
     <!--
