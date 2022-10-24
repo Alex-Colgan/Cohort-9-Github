@@ -43,6 +43,9 @@ console.log("Hi.");
  *
  */
 
+
+
+
 /** 1. Declaring an array variable and filling it with objects. */
 let myArray = [
   "eggs",
